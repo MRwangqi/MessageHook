@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         handler.postDelayed({
             Thread.sleep(5000)
-            Log.i("BadTokenUtils", "isFound Destroy message : ${BadTokenUtils.isOnDestroyMsgExit()}")
+            Log.i("BadTokenUtils", "isFound Destroy message : ${com.codelang.hook.BadTokenUtils.isOnDestroyMsgExit()}")
         }, 50)
 
         finish()

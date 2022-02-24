@@ -1,4 +1,4 @@
-package com.codelang.messagehook
+package com.codelang.hook
 
 import android.os.Build
 import android.os.Looper
@@ -18,7 +18,7 @@ object BadTokenUtils {
     @JvmStatic
     fun isOnDestroyMsgExit(): Boolean {
         val msg = hookMessage()
-        return nextMessage(::isOnDestroyMsgExit, msg)
+        return nextMessage(BadTokenUtils::isOnDestroyMsgExit, msg)
     }
 
 
