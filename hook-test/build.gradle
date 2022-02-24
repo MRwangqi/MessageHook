@@ -4,7 +4,6 @@ plugins {
     id 'maven-publish'
 }
 
-
 android {
     compileSdk 31
 
@@ -50,7 +49,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.codelang.jitpack'
-                artifactId = 'hook'
+                artifactId = 'hook-test'
                 version = '1.0'
             }
         }

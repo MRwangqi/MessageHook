@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "MessageHook"
 include ':app'
 include ':hook'
+include ':hook-test'
