@@ -4,6 +4,9 @@ plugins {
     id 'maven-publish'
 }
 
+group = 'com.codelang.hook-test'
+version = '1.0.0'
+
 android {
     compileSdk 31
 
