@@ -56,5 +56,11 @@ afterEvaluate {
                 version = '1.0'
             }
         }
+        repositories {
+            maven {
+                // 生成的插件位置
+                url = uri('../repo')
+            }
+        }
     }
 }
