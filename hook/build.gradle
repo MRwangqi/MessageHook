@@ -47,17 +47,11 @@ afterEvaluate {
     publishing {
         publications {
             // Creates a Maven publication called "release".
-//            release(MavenPublication) {
-//                from components.release
-//                groupId = 'com.codelang.jitpack'
-//                artifactId = 'hook'
-//                version = '1.0'
-//            }
-
-            maven(MavenPublication) {
-                // 版本id，最终会根据这个id-version生成相应的插件
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.codelang.jitpack'
                 artifactId = 'hook'
-                from components.java
+                version = '1.0'
             }
         }
     }
