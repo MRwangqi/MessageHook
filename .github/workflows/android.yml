@@ -43,7 +43,8 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: git@github.com:MRwangqi/Maven.git
-          SQUASH_HISTORY: 'false'
+          SQUASH_HISTORY: "false"
+          CLEAR_GLOBS_FILE: ".clear-target-files"
           BRANCH:  apk-m
           FOLDER: app/build/outputs/apk/debug
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
