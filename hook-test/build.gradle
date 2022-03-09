@@ -56,5 +56,10 @@ afterEvaluate {
                 version = '1.0'
             }
         }
+        repositories {
+            maven {
+                url = "../build/repo"
+            }
+        }
     }
 }
