@@ -43,8 +43,8 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: git@github.com:MRwangqi/Maven.git
-          BRANCH: main
+          SQUASH_HISTORY: false
+          BRANCH:  apk-m
           FOLDER: app/build/outputs/apk/debug
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-          SQUASH_HISTORY: false
      
