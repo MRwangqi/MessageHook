@@ -43,7 +43,7 @@ jobs:
           REPO: git@github.com:MRwangqi/Maven.git
           SQUASH_HISTORY: "false"
           CLEAR_GLOBS_FILE: ".clear-target-files"
-          BRANCH:  main
+          BRANCH:  apk
           FOLDER: build/repo
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
      
